@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS simple_user_registration;
+USE simple_user_registration;
+SHOW DATABASES;
+SELECT DATABASE();
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    country VARCHAR (255) NOT NULL
+);
+
+DESCRIBE users;
